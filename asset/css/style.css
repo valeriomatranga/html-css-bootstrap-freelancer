@@ -1,0 +1,40 @@
+[class*="col"]{
+    border: 1px solid gray;
+    height: 50px;
+}
+
+[class*="container"]{
+    border: 1px solid gray;
+}
+
+.nav{
+    background-color: rgba(44, 62, 80, 1);
+}
+
+.start{
+    height: 400px;
+    background-color: rgba(26, 188, 156, 1);    
+}
+
+.portfolio{
+    height: 500px;
+}
+
+.about{
+    height: 300px;
+    background-color: rgba(26, 188, 156, 1);
+}
+
+.contact{
+    height: 500px;
+}
+
+.footer{
+    height: 150px;
+    background-color: rgba(58, 84, 109, 1);
+}
+
+.copiryght{
+    height: 50px;
+    background-color: rgba(44, 62, 80, 1);
+}
