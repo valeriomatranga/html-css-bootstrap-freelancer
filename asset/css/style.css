@@ -1,21 +1,34 @@
-[class*="col"]{
+/* [class*="col"]{
     border: 1px solid gray;
     height: 50px;
 }
-
-[class*="container"]{
+ */
+/* [class*="container"]{
     border: 1px solid gray;
 }
-
-.nav{
+ */
+.bg_darkblue{
     background-color: rgba(44, 62, 80, 1);
 }
 
-.start{
+.bg_green{
     height: 400px;
     background-color: rgba(26, 188, 156, 1);    
 }
 
+.bg_blue{
+    height: 150px;
+    background-color: rgba(58, 84, 109, 1);
+}
+
+li{
+    text-transform: uppercase;
+}
+
+.mr-auto li:first-child{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
 .portfolio{
     height: 500px;
 }
@@ -29,10 +42,6 @@
     height: 500px;
 }
 
-.footer{
-    height: 150px;
-    background-color: rgba(58, 84, 109, 1);
-}
 
 .copiryght{
     height: 50px;
