@@ -20,19 +20,68 @@
     height: 150px;
     background-color: rgba(58, 84, 109, 1);
 }
-
+/************* header ************/
 li{
     text-transform: uppercase;
 }
 
-.mr-auto li:first-child{
+.navbar-brand{
     font-weight: 600;
     font-size: 1.5rem;
+    text-transform: uppercase;
+
 }
-.portfolio{
-    height: 500px;
+/************** /header ************/
+
+/************** main *************/
+
+
+/* start bootstrap */
+.container{
+    height: 100%;
+}
+.start img{
+    width: 150px;
 }
 
+.stars{
+    height: 60px;
+}
+.linea{
+    width: 400px;
+    margin: 30px;
+}
+.star{
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    bottom: 10px;
+    left: 190px;
+}
+.star i{
+    font-size: 1.5rem;
+}
+.white{
+    border: 1px solid white;
+}
+.black{
+    border: 1px solid black;
+}
+
+
+/* /start bootstrap */
+
+
+/* portfolio */
+
+
+.portfolio img{
+    height: 250px;
+}
+/* /portfolio */
+
+
+/* about */
 .about{
     height: 300px;
     background-color: rgba(26, 188, 156, 1);
