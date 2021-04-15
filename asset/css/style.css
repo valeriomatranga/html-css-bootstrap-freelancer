@@ -1,26 +1,16 @@
-/* [class*="col"]{
-    border: 1px solid gray;
-    height: 50px;
-}
- */
-/* [class*="container"]{
-    border: 1px solid gray;
-}
- */
 .bg_darkblue{
     background-color: rgba(44, 62, 80, 1);
 }
 
 .bg_green{
-    height: 400px;
     background-color: rgba(26, 188, 156, 1);    
 }
 
 .bg_blue{
-    height: 150px;
     background-color: rgba(58, 84, 109, 1);
 }
 /************* header ************/
+
 li{
     text-transform: uppercase;
 }
@@ -29,7 +19,6 @@ li{
     font-weight: 600;
     font-size: 1.5rem;
     text-transform: uppercase;
-
 }
 /************** /header ************/
 
@@ -37,43 +26,66 @@ li{
 
 
 /* start bootstrap */
-.container{
-    height: 100%;
+.container_start{
+    padding: 50px 0;
 }
+
 .start img{
     width: 150px;
 }
 
-.stars{
-    height: 60px;
-}
-.linea{
-    width: 400px;
-    margin: 30px;
-}
 .star{
     height: 40px;
-    width: 80px;
-    position: absolute;
-    bottom: 10px;
-    left: 190px;
+    display: inline-block;
 }
-.star i{
+
+.line_star i{
     font-size: 1.5rem;
-}
-.white{
-    border: 1px solid white;
-}
-.black{
-    border: 1px solid black;
+    margin: 0 30px;
 }
 
-
+.line_star::after, .line_star::before{
+    content:"";
+    display: inline-block;
+    background-color: #ffffff;
+    width: 9.5rem;
+    height: 0.25rem;
+    vertical-align: middle;
+    border-radius: 0.4rem;
+}
 /* /start bootstrap */
 
 
 /* portfolio */
+.portfolio>.container>.star>.line_star::after{
+    background-color: black;
+}
 
+.portfolio>.container>.star>.line_star::before{
+    background-color: black;
+}
+
+.card{
+    border: none;
+}
+
+.overlay{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card .overlay:hover{
+    display: block;
+    cursor: pointer;
+}
 
 .portfolio img{
     height: 250px;
@@ -83,16 +95,80 @@ li{
 
 /* about */
 .about{
-    height: 300px;
     background-color: rgba(26, 188, 156, 1);
 }
 
-.contact{
-    height: 500px;
+.about a{
+    width: 120px;
+    padding: 5px;
+}
+/* /about */
+
+
+
+/* contact me */
+input, textarea{
+    width: 100%;
+    margin: auto;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
 }
 
+.contact>.star>.line_star::after{
+    background-color: black;
+}
+.contact>.star>.line_star::before{
+    background-color: black;
+}
 
-.copiryght{
+.contact .btn{
+    width: 60px;
+    color: white;
+    margin: 20px 0 50px;
+}
+
+h2{
+    font-size: 3rem;
+}
+/* /contact me  */
+
+
+
+/* footer top */
+.icon{
+    width: 50px;
     height: 50px;
-    background-color: rgba(44, 62, 80, 1);
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+.icon>i{
+    font-size: 1.5rem;
+}
+
+footer h3{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+footer p{
+    transform: none;
+}
+
+footer .col-4{
+    padding: 50px;
+}
+
+footer a{
+    color:  rgba(26, 188, 156, 1);
+}
+/* /footer top */
+
+/* copyright */
+.copyright{
+    height: 100px;
 }
